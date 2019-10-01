@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b78612b6ef5fb3bfeb09061c70031cd4433a6850"
+    "signature": "1477afde3b7d74dfa0038c98a17d1c790120cab8"
   },
   "compilationOptions": {},
   "targets": {
@@ -87,6 +87,33 @@
           "lib/netstandard1.4/Elmah.Io.Client.dll": {
             "assemblyVersion": "3.5.67.0",
             "fileVersion": "3.5.67.0"
+          }
+        }
+      },
+      "ElmahCore/1.2.5": {
+        "dependencies": {
+          "ElmahCore.Common": "1.2.5",
+          "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ElmahCore.Mvc.dll": {
+            "assemblyVersion": "1.2.5.0",
+            "fileVersion": "1.2.5.0"
+          }
+        }
+      },
+      "ElmahCore.Common/1.2.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.WebUtilities": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ElmahCore.dll": {
+            "assemblyVersion": "1.2.5.0",
+            "fileVersion": "1.2.5.0"
           }
         }
       },
@@ -2842,6 +2869,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Elmah.Io.AspNetCore": "3.7.86",
+          "ElmahCore": "1.2.5",
           "FluentValidation.AspNetCore": "8.5.0",
           "LoanApp.BAL": "1.0.0",
           "LoanApp.DAL": "1.0.0",
@@ -2894,6 +2922,20 @@
       "sha512": "sha512-sGJl1+pFhYqWB3oZNeNra8b6qguEQLxC70NUM+Fg5qHy5izP55BJ78mTcRgftsB23hXRKAvrLNTWfOUsiBwQDg==",
       "path": "elmah.io.client/3.5.67",
       "hashPath": "elmah.io.client.3.5.67.nupkg.sha512"
+    },
+    "ElmahCore/1.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qJbMIGnad538Fq/Shc/VSM0PVBtYvJLoMlQaXb+BKMwLCMgdo7EnQmO2J9h8ZOZhjN1okF2S0pX8I5fbo0h1AQ==",
+      "path": "elmahcore/1.2.5",
+      "hashPath": "elmahcore.1.2.5.nupkg.sha512"
+    },
+    "ElmahCore.Common/1.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aiN+ZFnbVWXicItGw11mo9ogvYGYdWzEkR8YXOXRC48Bf/M6MbXunNyh9ImDTZGfzxY484gK2F2DgQEFdyLuSw==",
+      "path": "elmahcore.common/1.2.5",
+      "hashPath": "elmahcore.common.1.2.5.nupkg.sha512"
     },
     "FluentValidation/8.5.0": {
       "type": "package",

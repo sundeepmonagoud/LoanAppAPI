@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using ElmahCore;
+using ElmahCore.Mvc;
 using LoanApp.BAL;
 using LoanApp.DAL;
 using LoanApp.DAL.Model;
@@ -42,6 +44,10 @@ namespace LoanAppWebAPI
             services.AddScoped<ILoanServiceDAL, LoanServiceDAL>();
             services.AddScoped<ICustomerLoanServiceBAL, CustomerLoanServiceBAL>();
 
+            services.AddElmah<XmlFileErrorLog>(options =>
+            {
+                options.LogPath = "~/log"; // OR options.LogPath = "с:\errors";
+            });
 
             services.AddAutoMapper(typeof(Startup));
             // Enable CORS
@@ -95,6 +101,7 @@ namespace LoanAppWebAPI
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseCors("AllowAnyOrigin");
+            app.UseElmah();
         }
     }
 }

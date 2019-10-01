@@ -6,6 +6,8 @@ using AutoMapper;
 using LoanApp.BAL;
 using LoanApp.WebAPI.Model;
 using Microsoft.AspNetCore.Mvc;
+using ElmahCore;
+using Elmah.Io.AspNetCore;
 
 namespace LoanApp.WebAPI.Controllers
 {
@@ -33,8 +35,9 @@ namespace LoanApp.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                ex.Ship(HttpContext);
+                return StatusCode(500,"Internal server error");
 
-                throw;
             }
         }
     }

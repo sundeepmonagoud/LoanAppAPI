@@ -76,6 +76,35 @@
           "lib/netstandard1.4/Elmah.Io.Client.dll": {}
         }
       },
+      "ElmahCore/1.2.5": {
+        "type": "package",
+        "dependencies": {
+          "ElmahCore.Common": "1.2.5",
+          "Microsoft.AspNetCore.Authentication.Abstractions": "2.1.1",
+          "Microsoft.AspNetCore.Http": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/ElmahCore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ElmahCore.Mvc.dll": {}
+        }
+      },
+      "ElmahCore.Common/1.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1",
+          "Microsoft.AspNetCore.WebUtilities": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/ElmahCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ElmahCore.dll": {}
+        }
+      },
       "FluentValidation/8.5.0": {
         "type": "package",
         "dependencies": {
@@ -3789,6 +3818,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Elmah.Io.AspNetCore": "3.7.86",
+          "ElmahCore": "1.2.5",
           "FluentValidation.AspNetCore": "8.5.0",
           "LoanApp.BAL": "1.0.0",
           "LoanApp.DAL": "1.0.0",
@@ -3885,6 +3915,30 @@
         "lib/net46/Elmah.Io.Client.dll",
         "lib/netstandard1.1/Elmah.Io.Client.dll",
         "lib/netstandard1.4/Elmah.Io.Client.dll"
+      ]
+    },
+    "ElmahCore/1.2.5": {
+      "sha512": "qJbMIGnad538Fq/Shc/VSM0PVBtYvJLoMlQaXb+BKMwLCMgdo7EnQmO2J9h8ZOZhjN1okF2S0pX8I5fbo0h1AQ==",
+      "type": "package",
+      "path": "elmahcore/1.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elmahcore.1.2.5.nupkg.sha512",
+        "elmahcore.nuspec",
+        "lib/netstandard2.0/ElmahCore.Mvc.dll"
+      ]
+    },
+    "ElmahCore.Common/1.2.5": {
+      "sha512": "aiN+ZFnbVWXicItGw11mo9ogvYGYdWzEkR8YXOXRC48Bf/M6MbXunNyh9ImDTZGfzxY484gK2F2DgQEFdyLuSw==",
+      "type": "package",
+      "path": "elmahcore.common/1.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elmahcore.common.1.2.5.nupkg.sha512",
+        "elmahcore.common.nuspec",
+        "lib/netstandard2.0/ElmahCore.dll"
       ]
     },
     "FluentValidation/8.5.0": {
