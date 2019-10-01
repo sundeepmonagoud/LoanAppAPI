@@ -8,6 +8,7 @@ namespace LoanApp.WebAPI.Model
     public class CustomerLoanModel
     {
         public long LoanId { get; set; }
+        public long LoanNumber { get; set; }
         public string Name { get; set; }
         public decimal Balance { get; set; }
         public decimal Interest { get; set; }

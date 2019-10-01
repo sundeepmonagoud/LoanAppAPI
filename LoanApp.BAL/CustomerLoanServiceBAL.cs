@@ -23,6 +23,7 @@ namespace LoanApp.BAL
                   .Select(cld => new CustomerLoanData()
                   {
                       LoanId = cld.cl.LoanId,
+                      LoanNumber = cld.cl.LoanNumber,
                       Balance = Convert.ToDecimal(cld.cl.Balance),
                       Interest = Convert.ToDecimal(cld.cl.Interest),
                       PayoutAmount = Convert.ToDecimal(cld.cl.PayoutAmount),

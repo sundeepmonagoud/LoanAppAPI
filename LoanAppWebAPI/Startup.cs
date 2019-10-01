@@ -58,8 +58,7 @@ namespace LoanAppWebAPI
                     });
             });
 
-            services.AddMvc();
-            services.AddCors();
+          
             services.AddMvc().AddJsonOptions(options =>
             {
                 if (options.SerializerSettings.ContractResolver != null)
@@ -95,6 +94,7 @@ namespace LoanAppWebAPI
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseCors("AllowAnyOrigin");
         }
     }
 }
