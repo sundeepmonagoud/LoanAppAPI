@@ -52,6 +52,7 @@ LoanApp.DAL -
 API : 
 1.	Would implement Antiforgery token 
 2.	Enable CORS to specific website
+3. Would change the controller method to Async. 
 
 Angular :
 1.	I would write test case for all the scenarios and see the code coverage
