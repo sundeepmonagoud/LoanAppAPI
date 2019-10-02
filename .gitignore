@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LoanAppWebAPI/bin/Debug/netcoreapp2.2
+/LoanAppWebAPI/obj
+/LoanApp.BAL/obj
+/LoanApp.BAL/bin/Debug/netcoreapp2.2
+/LoanApp.DAL/obj
+/LoanApp.DAL/bin/Debug/netcoreapp2.2
