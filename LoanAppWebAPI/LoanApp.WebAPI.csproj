@@ -21,8 +21,4 @@
     <ProjectReference Include="..\LoanApp.DAL\LoanApp.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-
 </Project>
