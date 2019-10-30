@@ -26,9 +26,9 @@ namespace LoanApp.BAL
                       LoanNumber = cld.cl.LoanNumber,
                       Balance = Convert.ToDecimal(cld.cl.Balance),
                       Interest = Convert.ToDecimal(cld.cl.Interest),
-                      
+
                       EarlyRePaymentFee = Convert.ToDecimal(cld.cl.EarlyRePaymentFee),
-                      PayoutAmount = Convert.ToDecimal(cld.cl.Balance) + Convert.ToDecimal(cld.cl.Interest) + Convert.ToDecimal(cld.cl.EarlyRePaymentFee)
+                      PayoutAmount = Convert.ToDecimal(cld.cl.Balance) + Convert.ToDecimal(cld.cl.Interest) + Convert.ToDecimal(cld.cl.EarlyRePaymentFee),
                       Name = cld.ld.Name
                   }
                   ).ToList();
